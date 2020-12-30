@@ -51,4 +51,7 @@ async function parse(){
         console.log(delim)
     })
 }
-parse()
+parse().then((resolve)=>{
+}, (reject)=>{
+    console.log("Error while loading file")
+});
